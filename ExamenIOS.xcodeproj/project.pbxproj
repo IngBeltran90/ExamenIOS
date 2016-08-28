@@ -60,6 +60,7 @@
 		8EF960051D7389E500866310 /* ExamenIOS */ = {
 			isa = PBXGroup;
 			children = (
+				8EF960221D73999800866310 /* Images */,
 				8EF960201D738BB200866310 /* Main */,
 				8EF960211D738BC200866310 /* Controllers */,
 				8EF9600F1D7389E500866310 /* Main.storyboard */,
@@ -96,6 +97,13 @@
 				8EF9600D1D7389E500866310 /* Home.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8EF960221D73999800866310 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
