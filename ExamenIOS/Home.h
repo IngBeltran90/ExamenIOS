@@ -10,6 +10,9 @@
 
 @interface Home : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *btnContinuar;
+- (IBAction)btnContinuar:(id)sender;
+
 
 @end
 

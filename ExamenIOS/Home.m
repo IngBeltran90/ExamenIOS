@@ -24,4 +24,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)btnContinuar:(id)sender {
+    [self performSegueWithIdentifier:@"Selection" sender:self];
+}
+
+/**********************************************************************************************/
+#pragma mark - Navigation
+/**********************************************************************************************/
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    //if ([segue.destinationViewController isKindOfClass:[MunicipalityLocation class]]) {
+    //    MunicipalityLocation *Municipality     = [segue destinationViewController];
+    //    Municipality.municipalityTitleLoc        = self.municipalityTitle;
+    //}
+}
+
+
 @end

@@ -14,6 +14,14 @@
 		8EF960141D7389E500866310 /* ExamenIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EF960121D7389E500866310 /* ExamenIOS.xcdatamodeld */; };
 		8EF960161D7389E500866310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF960151D7389E500866310 /* Assets.xcassets */; };
 		8EF960191D7389E500866310 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF960171D7389E500866310 /* LaunchScreen.storyboard */; };
+		8EF960251D73A92900866310 /* Selection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF960241D73A92900866310 /* Selection.m */; };
+		8EF9602B1D73ABAC00866310 /* apple_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EF9602A1D73ABAC00866310 /* apple_logo.png */; };
+		8EF9602F1D73ACDB00866310 /* cellSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF9602D1D73ACDB00866310 /* cellSelection.m */; };
+		8EF960301D73ACDB00866310 /* cellSelection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EF9602E1D73ACDB00866310 /* cellSelection.xib */; };
+		8EF960331D73B71900866310 /* shoppingcarticon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8EF960311D73B71900866310 /* shoppingcarticon.jpg */; };
+		8EF960341D73B71900866310 /* wheatericon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EF960321D73B71900866310 /* wheatericon.png */; };
+		8EF9603A1D73C8C000866310 /* WheaterMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF960391D73C8C000866310 /* WheaterMap.m */; };
+		8EF9603D1D73C8EA00866310 /* OnlineShopping.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF9603C1D73C8EA00866310 /* OnlineShopping.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +36,18 @@
 		8EF960151D7389E500866310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EF960181D7389E500866310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EF9601A1D7389E500866310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EF960231D73A92900866310 /* Selection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Selection.h; sourceTree = "<group>"; };
+		8EF960241D73A92900866310 /* Selection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Selection.m; sourceTree = "<group>"; };
+		8EF9602A1D73ABAC00866310 /* apple_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apple_logo.png; path = Images/apple_logo.png; sourceTree = "<group>"; };
+		8EF9602C1D73ACDB00866310 /* cellSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellSelection.h; sourceTree = "<group>"; };
+		8EF9602D1D73ACDB00866310 /* cellSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellSelection.m; sourceTree = "<group>"; };
+		8EF9602E1D73ACDB00866310 /* cellSelection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellSelection.xib; sourceTree = "<group>"; };
+		8EF960311D73B71900866310 /* shoppingcarticon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = shoppingcarticon.jpg; path = Images/shoppingcarticon.jpg; sourceTree = "<group>"; };
+		8EF960321D73B71900866310 /* wheatericon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wheatericon.png; path = Images/wheatericon.png; sourceTree = "<group>"; };
+		8EF960381D73C8C000866310 /* WheaterMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheaterMap.h; sourceTree = "<group>"; };
+		8EF960391D73C8C000866310 /* WheaterMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WheaterMap.m; sourceTree = "<group>"; };
+		8EF9603B1D73C8EA00866310 /* OnlineShopping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlineShopping.h; sourceTree = "<group>"; };
+		8EF9603C1D73C8EA00866310 /* OnlineShopping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnlineShopping.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,7 @@
 		8EF960051D7389E500866310 /* ExamenIOS */ = {
 			isa = PBXGroup;
 			children = (
+				8EF960261D73AB1600866310 /* Cells */,
 				8EF960221D73999800866310 /* Images */,
 				8EF960201D738BB200866310 /* Main */,
 				8EF960211D738BC200866310 /* Controllers */,
@@ -95,6 +116,12 @@
 			children = (
 				8EF9600C1D7389E500866310 /* Home.h */,
 				8EF9600D1D7389E500866310 /* Home.m */,
+				8EF960231D73A92900866310 /* Selection.h */,
+				8EF960241D73A92900866310 /* Selection.m */,
+				8EF960381D73C8C000866310 /* WheaterMap.h */,
+				8EF960391D73C8C000866310 /* WheaterMap.m */,
+				8EF9603B1D73C8EA00866310 /* OnlineShopping.h */,
+				8EF9603C1D73C8EA00866310 /* OnlineShopping.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -102,8 +129,21 @@
 		8EF960221D73999800866310 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8EF960311D73B71900866310 /* shoppingcarticon.jpg */,
+				8EF960321D73B71900866310 /* wheatericon.png */,
+				8EF9602A1D73ABAC00866310 /* apple_logo.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		8EF960261D73AB1600866310 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8EF9602C1D73ACDB00866310 /* cellSelection.h */,
+				8EF9602D1D73ACDB00866310 /* cellSelection.m */,
+				8EF9602E1D73ACDB00866310 /* cellSelection.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +205,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EF960191D7389E500866310 /* LaunchScreen.storyboard in Resources */,
+				8EF960341D73B71900866310 /* wheatericon.png in Resources */,
 				8EF960161D7389E500866310 /* Assets.xcassets in Resources */,
+				8EF960331D73B71900866310 /* shoppingcarticon.jpg in Resources */,
 				8EF960111D7389E500866310 /* Main.storyboard in Resources */,
+				8EF960301D73ACDB00866310 /* cellSelection.xib in Resources */,
+				8EF9602B1D73ABAC00866310 /* apple_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,9 +221,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EF9603D1D73C8EA00866310 /* OnlineShopping.m in Sources */,
 				8EF9600E1D7389E500866310 /* Home.m in Sources */,
 				8EF9600B1D7389E500866310 /* AppDelegate.m in Sources */,
+				8EF9603A1D73C8C000866310 /* WheaterMap.m in Sources */,
+				8EF960251D73A92900866310 /* Selection.m in Sources */,
 				8EF960081D7389E500866310 /* main.m in Sources */,
+				8EF9602F1D73ACDB00866310 /* cellSelection.m in Sources */,
 				8EF960141D7389E500866310 /* ExamenIOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
