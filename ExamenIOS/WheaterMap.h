@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface WheaterMap : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *viewSubMap;
 
 @end

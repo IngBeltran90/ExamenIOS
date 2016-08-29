@@ -22,9 +22,14 @@
 		8EF960341D73B71900866310 /* wheatericon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EF960321D73B71900866310 /* wheatericon.png */; };
 		8EF9603A1D73C8C000866310 /* WheaterMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF960391D73C8C000866310 /* WheaterMap.m */; };
 		8EF9603D1D73C8EA00866310 /* OnlineShopping.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF9603C1D73C8EA00866310 /* OnlineShopping.m */; };
+		8EF960411D73E3AB00866310 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8EF960401D73E3AB00866310 /* Podfile */; };
+		91DCD511A4437353F066B1FC /* Pods_ExamenIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371877D8EDBCDDDED3446581 /* Pods_ExamenIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19291DF62184CA26DD310C71 /* Pods-ExamenIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamenIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExamenIOS/Pods-ExamenIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		371877D8EDBCDDDED3446581 /* Pods_ExamenIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExamenIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		640615391FCD4C1B5D79F1CF /* Pods-ExamenIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamenIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExamenIOS/Pods-ExamenIOS.release.xcconfig"; sourceTree = "<group>"; };
 		8EF960031D7389E500866310 /* ExamenIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamenIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF960071D7389E500866310 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8EF960091D7389E500866310 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,6 +53,7 @@
 		8EF960391D73C8C000866310 /* WheaterMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WheaterMap.m; sourceTree = "<group>"; };
 		8EF9603B1D73C8EA00866310 /* OnlineShopping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlineShopping.h; sourceTree = "<group>"; };
 		8EF9603C1D73C8EA00866310 /* OnlineShopping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnlineShopping.m; sourceTree = "<group>"; };
+		8EF960401D73E3AB00866310 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,17 +61,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91DCD511A4437353F066B1FC /* Pods_ExamenIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		882AAA844A892A04BA8C97E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19291DF62184CA26DD310C71 /* Pods-ExamenIOS.debug.xcconfig */,
+				640615391FCD4C1B5D79F1CF /* Pods-ExamenIOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8EF95FFA1D7389E500866310 = {
 			isa = PBXGroup;
 			children = (
 				8EF960051D7389E500866310 /* ExamenIOS */,
 				8EF960041D7389E500866310 /* Products */,
+				882AAA844A892A04BA8C97E1 /* Pods */,
+				E2EA94CD999F58115F388FCB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +108,7 @@
 				8EF9601A1D7389E500866310 /* Info.plist */,
 				8EF960121D7389E500866310 /* ExamenIOS.xcdatamodeld */,
 				8EF960061D7389E500866310 /* Supporting Files */,
+				8EF960401D73E3AB00866310 /* Podfile */,
 			);
 			path = ExamenIOS;
 			sourceTree = "<group>";
@@ -146,6 +165,14 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		E2EA94CD999F58115F388FCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				371877D8EDBCDDDED3446581 /* Pods_ExamenIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,9 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EF9601D1D7389E500866310 /* Build configuration list for PBXNativeTarget "ExamenIOS" */;
 			buildPhases = (
+				1B3BE2F9DF58607DA18F5F6C /* [CP] Check Pods Manifest.lock */,
 				8EF95FFF1D7389E500866310 /* Sources */,
 				8EF960001D7389E500866310 /* Frameworks */,
 				8EF960011D7389E500866310 /* Resources */,
+				25E1CCBFFD92DAD06C5184C8 /* [CP] Embed Pods Frameworks */,
+				086CDCD41E7DD1863CA7FB2D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +236,7 @@
 			files = (
 				8EF960191D7389E500866310 /* LaunchScreen.storyboard in Resources */,
 				8EF960341D73B71900866310 /* wheatericon.png in Resources */,
+				8EF960411D73E3AB00866310 /* Podfile in Resources */,
 				8EF960161D7389E500866310 /* Assets.xcassets in Resources */,
 				8EF960331D73B71900866310 /* shoppingcarticon.jpg in Resources */,
 				8EF960111D7389E500866310 /* Main.storyboard in Resources */,
@@ -215,6 +246,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		086CDCD41E7DD1863CA7FB2D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExamenIOS/Pods-ExamenIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B3BE2F9DF58607DA18F5F6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		25E1CCBFFD92DAD06C5184C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExamenIOS/Pods-ExamenIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8EF95FFF1D7389E500866310 /* Sources */ = {
@@ -338,6 +417,7 @@
 		};
 		8EF9601E1D7389E500866310 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19291DF62184CA26DD310C71 /* Pods-ExamenIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -351,6 +431,7 @@
 		};
 		8EF9601F1D7389E500866310 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 640615391FCD4C1B5D79F1CF /* Pods-ExamenIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -381,6 +462,7 @@
 				8EF9601F1D7389E500866310 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
