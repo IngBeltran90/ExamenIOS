@@ -12,6 +12,10 @@
 @property NSMutableArray *ProductName;
 @property NSMutableArray *ProductImage;
 @property NSMutableArray *Productprice;
+
+@property NSString *sProductName;
+@property NSString *sProductprice;
+@property NSString *sProductImage;
 @end
 
 @implementation OnlineShopping
@@ -31,7 +35,7 @@
 - (void)initController {
     self.ProductName = [[NSMutableArray alloc] initWithObjects: @"New 3DS", @"PS Vita", @"Nintendo Game Cube", @"Play Station 3", @"Wii", @"Xbox 360", @"Nintendo Wii U", @"Play Station 4", @"Xbox One", @"Steam Machine", nil];
     self.ProductImage = [[NSMutableArray alloc] initWithObjects: @"NewN3D.jpg", @"pspvita.jpg", @"NGC.png",@"PS3.png",@"wii.jpg",@"xbox360.jpg",@"NintendoWiiU.jpg",@"ps4.png",@"xboxone.jpg",@"steammachine.jpg", nil];
-    self.Productprice = [[NSMutableArray alloc] initWithObjects: @"$4500", @"$2500",@"$850",@"$1500",@"$1500",@"$1500",@"$7500",@"$7000",@"$8000",@"$12000", nil];
+    self.Productprice = [[NSMutableArray alloc] initWithObjects: @"4500", @"2500",@"850",@"1500",@"1500",@"1500",@"7500",@"7000",@"8000",@"12000", nil];
 
     
 }
@@ -69,12 +73,11 @@
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     //-------------------------------------------------------------------------------
-    if([self.ProductName[indexPath.row]  isEqual: @"Mapa con Clima"]){
-        //[self performSegueWithIdentifier:@"WheaterMap" sender:self];
-    }
-    else if([self.ProductName[indexPath.row]  isEqual: @"Tienda online"]){
-        //[self performSegueWithIdentifier:@"OnlineShopping" sender:self];
-    }
+    self.sProductName = self.ProductName[indexPath.row];
+    self.sProductprice = self.Productprice[indexPath.row];
+    self.sProductImage = self.ProductImage[indexPath.row];
+
+    [self performSegueWithIdentifier:@"PaypalPayment" sender:self];
 }
 
 /**********************************************************************************************/
@@ -82,8 +85,11 @@
 /**********************************************************************************************/
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    if ([segue.destinationViewController isKindOfClass:[OnlineShopping class]]) {
-        
+    if ([segue.destinationViewController isKindOfClass:[PaypalPayment class]]) {
+        PaypalPayment *ProductInfo = [segue destinationViewController];
+        ProductInfo.ProductName = self.sProductName;
+        ProductInfo.ProductPrice = self.sProductprice;
+        ProductInfo.ProductImage = self.sProductImage;
     }
 }
 

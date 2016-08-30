@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "cellOnlineShopping.h"
+#import "PaypalPayment.h"
 
 @interface OnlineShopping : UIViewController
 
