@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EBAD9661D750038001F7B57 /* cellOnlineShopping.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAD9641D750038001F7B57 /* cellOnlineShopping.m */; };
+		8EBAD9671D750038001F7B57 /* cellOnlineShopping.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EBAD9651D750038001F7B57 /* cellOnlineShopping.xib */; };
+		8EBAD9721D750869001F7B57 /* NewN3D.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8EBAD9681D750869001F7B57 /* NewN3D.jpg */; };
+		8EBAD9731D750869001F7B57 /* NGC.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBAD9691D750869001F7B57 /* NGC.png */; };
+		8EBAD9741D750869001F7B57 /* NintendoWiiU.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8EBAD96A1D750869001F7B57 /* NintendoWiiU.jpg */; };
+		8EBAD9751D750869001F7B57 /* ps3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBAD96B1D750869001F7B57 /* ps3.png */; };
+		8EBAD9761D750869001F7B57 /* ps4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBAD96C1D750869001F7B57 /* ps4.png */; };
+		8EBAD9771D750869001F7B57 /* pspvita.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8EBAD96D1D750869001F7B57 /* pspvita.jpg */; };
+		8EBAD9781D750869001F7B57 /* steammachine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8EBAD96E1D750869001F7B57 /* steammachine.jpg */; };
+		8EBAD9791D750869001F7B57 /* wii.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8EBAD96F1D750869001F7B57 /* wii.jpg */; };
+		8EBAD97A1D750869001F7B57 /* xbox360.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8EBAD9701D750869001F7B57 /* xbox360.jpg */; };
+		8EBAD97B1D750869001F7B57 /* xboxone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8EBAD9711D750869001F7B57 /* xboxone.jpg */; };
 		8EF960081D7389E500866310 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF960071D7389E500866310 /* main.m */; };
 		8EF9600B1D7389E500866310 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF9600A1D7389E500866310 /* AppDelegate.m */; };
 		8EF9600E1D7389E500866310 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF9600D1D7389E500866310 /* Home.m */; };
@@ -30,6 +42,19 @@
 		19291DF62184CA26DD310C71 /* Pods-ExamenIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamenIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExamenIOS/Pods-ExamenIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		371877D8EDBCDDDED3446581 /* Pods_ExamenIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExamenIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		640615391FCD4C1B5D79F1CF /* Pods-ExamenIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamenIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExamenIOS/Pods-ExamenIOS.release.xcconfig"; sourceTree = "<group>"; };
+		8EBAD9631D750038001F7B57 /* cellOnlineShopping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellOnlineShopping.h; sourceTree = "<group>"; };
+		8EBAD9641D750038001F7B57 /* cellOnlineShopping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellOnlineShopping.m; sourceTree = "<group>"; };
+		8EBAD9651D750038001F7B57 /* cellOnlineShopping.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellOnlineShopping.xib; sourceTree = "<group>"; };
+		8EBAD9681D750869001F7B57 /* NewN3D.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = NewN3D.jpg; path = Images/NewN3D.jpg; sourceTree = "<group>"; };
+		8EBAD9691D750869001F7B57 /* NGC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NGC.png; path = Images/NGC.png; sourceTree = "<group>"; };
+		8EBAD96A1D750869001F7B57 /* NintendoWiiU.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = NintendoWiiU.jpg; path = Images/NintendoWiiU.jpg; sourceTree = "<group>"; };
+		8EBAD96B1D750869001F7B57 /* ps3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ps3.png; path = Images/ps3.png; sourceTree = "<group>"; };
+		8EBAD96C1D750869001F7B57 /* ps4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ps4.png; path = Images/ps4.png; sourceTree = "<group>"; };
+		8EBAD96D1D750869001F7B57 /* pspvita.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pspvita.jpg; path = Images/pspvita.jpg; sourceTree = "<group>"; };
+		8EBAD96E1D750869001F7B57 /* steammachine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = steammachine.jpg; path = Images/steammachine.jpg; sourceTree = "<group>"; };
+		8EBAD96F1D750869001F7B57 /* wii.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wii.jpg; path = Images/wii.jpg; sourceTree = "<group>"; };
+		8EBAD9701D750869001F7B57 /* xbox360.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = xbox360.jpg; path = Images/xbox360.jpg; sourceTree = "<group>"; };
+		8EBAD9711D750869001F7B57 /* xboxone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = xboxone.jpg; path = Images/xboxone.jpg; sourceTree = "<group>"; };
 		8EF960031D7389E500866310 /* ExamenIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamenIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF960071D7389E500866310 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8EF960091D7389E500866310 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +173,16 @@
 		8EF960221D73999800866310 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8EBAD9681D750869001F7B57 /* NewN3D.jpg */,
+				8EBAD9691D750869001F7B57 /* NGC.png */,
+				8EBAD96A1D750869001F7B57 /* NintendoWiiU.jpg */,
+				8EBAD96B1D750869001F7B57 /* ps3.png */,
+				8EBAD96C1D750869001F7B57 /* ps4.png */,
+				8EBAD96D1D750869001F7B57 /* pspvita.jpg */,
+				8EBAD96E1D750869001F7B57 /* steammachine.jpg */,
+				8EBAD96F1D750869001F7B57 /* wii.jpg */,
+				8EBAD9701D750869001F7B57 /* xbox360.jpg */,
+				8EBAD9711D750869001F7B57 /* xboxone.jpg */,
 				8EF960311D73B71900866310 /* shoppingcarticon.jpg */,
 				8EF960321D73B71900866310 /* wheatericon.png */,
 				8EF9602A1D73ABAC00866310 /* apple_logo.png */,
@@ -161,6 +196,9 @@
 				8EF9602C1D73ACDB00866310 /* cellSelection.h */,
 				8EF9602D1D73ACDB00866310 /* cellSelection.m */,
 				8EF9602E1D73ACDB00866310 /* cellSelection.xib */,
+				8EBAD9631D750038001F7B57 /* cellOnlineShopping.h */,
+				8EBAD9641D750038001F7B57 /* cellOnlineShopping.m */,
+				8EBAD9651D750038001F7B57 /* cellOnlineShopping.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -234,13 +272,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EBAD9741D750869001F7B57 /* NintendoWiiU.jpg in Resources */,
+				8EBAD9791D750869001F7B57 /* wii.jpg in Resources */,
 				8EF960191D7389E500866310 /* LaunchScreen.storyboard in Resources */,
+				8EBAD9671D750038001F7B57 /* cellOnlineShopping.xib in Resources */,
+				8EBAD9731D750869001F7B57 /* NGC.png in Resources */,
 				8EF960341D73B71900866310 /* wheatericon.png in Resources */,
+				8EBAD97B1D750869001F7B57 /* xboxone.jpg in Resources */,
+				8EBAD9771D750869001F7B57 /* pspvita.jpg in Resources */,
 				8EF960411D73E3AB00866310 /* Podfile in Resources */,
+				8EBAD97A1D750869001F7B57 /* xbox360.jpg in Resources */,
+				8EBAD9751D750869001F7B57 /* ps3.png in Resources */,
 				8EF960161D7389E500866310 /* Assets.xcassets in Resources */,
 				8EF960331D73B71900866310 /* shoppingcarticon.jpg in Resources */,
 				8EF960111D7389E500866310 /* Main.storyboard in Resources */,
 				8EF960301D73ACDB00866310 /* cellSelection.xib in Resources */,
+				8EBAD9761D750869001F7B57 /* ps4.png in Resources */,
+				8EBAD9721D750869001F7B57 /* NewN3D.jpg in Resources */,
+				8EBAD9781D750869001F7B57 /* steammachine.jpg in Resources */,
 				8EF9602B1D73ABAC00866310 /* apple_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EBAD9661D750038001F7B57 /* cellOnlineShopping.m in Sources */,
 				8EF9603D1D73C8EA00866310 /* OnlineShopping.m in Sources */,
 				8EF9600E1D7389E500866310 /* Home.m in Sources */,
 				8EF9600B1D7389E500866310 /* AppDelegate.m in Sources */,

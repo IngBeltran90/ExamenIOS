@@ -11,7 +11,6 @@
 @interface Selection ()
 @property NSMutableArray *SelectionArray;
 @property NSMutableArray *OptionImage;
-
 @end
 
 @implementation Selection
@@ -29,7 +28,7 @@
 
 //-------------------------------------------------------------------------------
 - (void)initController {
-    self.SelectionArray = [[NSMutableArray alloc] initWithObjects: @"Mapa con Clima", @"Tienda online", nil];
+    self.SelectionArray = [[NSMutableArray alloc] initWithObjects: @"Mapa con Clima", @"Tienda VideoJuegos online", nil];
     self.OptionImage = [[NSMutableArray alloc] initWithObjects: @"wheatericon.png", @"shoppingcarticon.jpg", nil];
 
 }
@@ -68,7 +67,7 @@
     if([self.SelectionArray[indexPath.row]  isEqual: @"Mapa con Clima"]){
     [self performSegueWithIdentifier:@"WheaterMap" sender:self];
     }
-    else if([self.SelectionArray[indexPath.row]  isEqual: @"Tienda online"]){
+    else if([self.SelectionArray[indexPath.row]  isEqual: @"Tienda VideoJuegos online"]){
         [self performSegueWithIdentifier:@"OnlineShopping" sender:self];
     }
 }
