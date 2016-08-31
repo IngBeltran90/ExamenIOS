@@ -35,12 +35,12 @@ GMSMapView *mapView_;
 #pragma mark - Action methods
 /**********************************************************************************************/
 - (IBAction)btnLoad:(id)sender {
-    if (![self.txtLatitud.text isEqual:@""] && ![self.txtLongitud.text isEqual:@""]) {
+    //if (![self.txtLatitud.text isEqual:@""] && ![self.txtLongitud.text isEqual:@""]) {
         [self qeueLoadData];
-    }
-    else {
-        self.lblCityName.text = @"Error, campo vacío";
-    }
+    //}
+    //else {
+        //self.lblCityName.text = @"Error, campo vacío";
+    //}
     
 }
 
@@ -91,6 +91,8 @@ GMSMapView *mapView_;
         self.lblTempMinVal.text       = [NSString stringWithFormat:@"%f", mainObject.temp_min];
         self.lblTempMaxVal.text       = [NSString stringWithFormat:@"%f", mainObject.temp_max];
         self.lblSeaLevelVal.text      = [NSString stringWithFormat:@"%f", mainObject.sea_level];
+        self.txtLatitud.text          = [NSString stringWithFormat:@"%f", self.locationLatitude];
+        self.txtLongitud.text          = [NSString stringWithFormat:@"%f", self.locationLongitude];
         //self.lblGroundLevel.text        = [NSString stringWithFormat:@"%f", mainObject.grnd_level];
         
         
