@@ -7,17 +7,18 @@
 //
 
 #import "WheaterMap.h"
-@import GoogleMaps;
-#import <GoogleMaps/GoogleMaps.h>
+
 
 #define nLat @"20.765890"
 #define nLng @"-103.421752"
 
 @interface WheaterMap ()
+
 @end
 
 @implementation WheaterMap{
 GMSMapView *mapView_;
+GMSCameraPosition *camera;
 }
 
 - (void)viewDidLoad {
@@ -29,6 +30,54 @@ GMSMapView *mapView_;
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)createMap {
+    // Create a GMSCameraPosition that tells the map to display the
+    // coordinate -33.86,151.20 at zoom level 6.
+    camera = [GMSCameraPosition cameraWithLatitude:self.locationLatitude
+                                         longitude:self.locationLongitude
+                                              zoom:self.locationZoom];
+    
+    //mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
+    mapView_ = [GMSMapView mapWithFrame:self.viewSubMap.bounds camera:camera];
+    //mapView_.myLocationEnabled = YES;
+    
+    
+    [mapView_ animateToCameraPosition:camera];
+    
+    [self.view addSubview:self.viewSubMap];
+    [self.viewSubMap addSubview:mapView_];
+    
+    
+    // Creates a marker in the center of the map.
+    //GMSMarker *marker = [[GMSMarker alloc] init];
+    //marker.position = CLLocationCoordinate2DMake(self.locationLatitude, self.locationLongitude);
+    //marker.title = @"Mi Casa";
+    //marker.snippet = @"Zapopan";
+    //marker.map = mapView_;
+}
+
+
+#pragma mark - GMSMapViewDelegate
+
+- (void)mapView:(GMSMapView *)mapView didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
+    NSLog(@"You tapped at %f,%f", coordinate.latitude, coordinate.longitude);
+    self.txtLatitud.text = [NSString stringWithFormat:@"%f", coordinate.latitude];
+    self.txtLongitud.text = [NSString stringWithFormat:@"%f", coordinate.longitude];
+    self.txtLatitud.textColor = [UIColor redColor];
+    self.txtLongitud.textColor = [UIColor redColor];
+    [self qeueLoadData];
+    
+    //[mapView_ clear];
+    [self.viewSubMap clear];
+    CLLocationCoordinate2D position = CLLocationCoordinate2DMake(coordinate.latitude, coordinate.longitude);
+    GMSMarker *marker = [GMSMarker markerWithPosition:position];
+    //marker.position = CLLocationCoordinate2DMake(coordinate.latitude, coordinate.longitude);
+    marker.title = @"Seleccion...";
+    marker.map = self.viewSubMap;
+    //marker.map = mapView_;
+    NSLog(@"Fin del marker");
 }
 
 /**********************************************************************************************/
@@ -62,13 +111,13 @@ GMSMapView *mapView_;
 //----------------------------------------------------------------------------------------------
 - (void)loadData {
     print(NSLog(@"Antes del Json"))
-    NSString *latText = [NSString stringWithFormat:@"%f", (self.locationLatitude)];
-    NSString *lonText = [NSString stringWithFormat:@"%f", (self.locationLongitude)];
+    NSString *latText = [NSString stringWithFormat:@"%@", (self.txtLatitud.text)];
+    NSString *lonText = [NSString stringWithFormat:@"%@", (self.txtLongitud.text)];
     
     
     
-    mjsonGeo = [WebServices getWeatherWithLatitude:latText AndLongitude:lonText];
-    //mjsonGeo = [WebServices getWeatherWithLatitude:@"20.765890" AndLongitude:@"-103.421752"];
+    //mjsonGeo = [WebServices getWeatherWithLatitude:latText AndLongitude:lonText];
+    mjsonGeo = [WebServices getWeatherWithLatitude:@"20.765890" AndLongitude:@"-103.421752"];
 
     print(NSLog(@"JoBe mjsonGeo  = %@",mjsonGeo))
 }
@@ -101,29 +150,6 @@ GMSMapView *mapView_;
         [UIApplication sharedApplication].networkActivityIndicatorVisible   = NO;
         [self.activityLoad stopAnimating];
     });
-}
-
-- (void)createMap {
-    // Create a GMSCameraPosition that tells the map to display the
-    // coordinate -33.86,151.20 at zoom level 6.
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:self.locationLatitude
-                                                            longitude:self.locationLongitude
-                                                                 zoom:self.locationZoom];
-    
-    mapView_ = [GMSMapView mapWithFrame:self.viewSubMap.bounds camera:camera];
-    mapView_.myLocationEnabled = YES;
-    
-    [mapView_ animateToCameraPosition:camera];
-    [self.view addSubview:self.viewSubMap];
-    [self.viewSubMap addSubview:mapView_];
-
-    
-    // Creates a marker in the center of the map.
-    GMSMarker *marker = [[GMSMarker alloc] init];
-    marker.position = CLLocationCoordinate2DMake(self.locationLatitude, self.locationLongitude);
-    marker.title = @"Mi Casa";
-    marker.snippet = @"Zapopan";
-    marker.map = mapView_;
 }
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@import GoogleMaps;
+#import <GoogleMaps/GoogleMaps.h>
 #import "WebServices.h"
 #import "Declarations.h"
 
@@ -15,6 +17,7 @@
 @property double locationLatitude;
 @property double locationLongitude;
 @property double locationZoom;
+
 
 @property (strong, nonatomic) IBOutlet UILabel *lblCityName;
 @property (strong, nonatomic) IBOutlet UILabel *lblPressureVal;
@@ -27,6 +30,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *btnLoad;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityLoad;
 - (IBAction)btnLoad:(id)sender;
-@property (strong, nonatomic) IBOutlet UIView *viewSubMap;
+@property (strong, nonatomic) IBOutlet GMSMapView *viewSubMap;
 
 @end
